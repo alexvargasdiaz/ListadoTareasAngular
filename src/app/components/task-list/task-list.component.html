@@ -1,0 +1,11 @@
+<app-add-task (onTaskAdd)="onAdd($event)"></app-add-task>
+
+<mat-list>
+  <mat-list-item *ngFor="let task of tasks">
+    <mat-checkbox [checked]="task.completed">{{ task.title }}</mat-checkbox>
+    <button mat-icon-button color="warn" (click)="deleteTask(task.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>
+

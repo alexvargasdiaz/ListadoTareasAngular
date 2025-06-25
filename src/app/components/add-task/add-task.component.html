@@ -1,0 +1,5 @@
+<mat-form-field appearance="fill" class="full-width">
+  <mat-label>Nueva Tarea</mat-label>
+  <input matInput [(ngModel)]="newTask" placeholder="Escribe una tarea" />
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="addTask()">Agregar</button>
