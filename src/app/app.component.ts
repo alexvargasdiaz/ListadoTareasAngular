@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { TaskListComponent } from './components/task-list/task-list.component';
+import { SeacherComponent } from './components/seacher/seacher.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, TaskListComponent],
+  imports: [CommonModule, TaskListComponent, SeacherComponent],
   template: `
     <main class="container">
       <h1>📋 Lista de Tareas</h1>
       <app-task-list></app-task-list>
+      <app-seacher></app-seacher>
     </main>
   `,
   styles: [`
